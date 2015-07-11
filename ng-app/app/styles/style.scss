@@ -1,0 +1,65 @@
+$white : #fff;
+$grey  : #f8f8f8;
+
+body {
+  background-color: #f4f2f2;
+}
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.float-right {
+  float: right;
+}
+.main-image {
+  .buffer-top {
+    padding-top: 100px;
+  }
+}
+.header {
+  margin: 0;
+  padding: 0;  
+  .navbar {
+    margin: 0;
+  }
+  .navbar-inverse {
+    background: none;
+    border: none;
+    padding: 10px;
+  }
+  .navbar-nav {
+    padding: 15px;
+    a {
+      color: $grey;
+    }
+  }
+  .navbar-brand {
+    padding: 30px;
+  }
+  .logo {
+    position: absolute;
+    width: 140px;
+    margin-top: -25px;
+  }
+}
+.main-image {
+  color: white;
+  margin-top: -20px;
+  min-height: 600px;
+  background: url("/images/casafoodiebg.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+.jumbotron {
+  padding: 0;
+  margin: 0;
+}
