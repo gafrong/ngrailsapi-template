@@ -9,16 +9,17 @@ module Product
 
       desc "create a new product list"
       params do 
-        requires :name, type: String
+        requires :title, type: String
         requires :category, type: String
-        requires :price, type: Integer
+        requires :price
       end
 
       post do 
         List.create!({
-          name:params[:name],
+          title:params[:title],
           category:params[:category],
-          price:params[:price]
+          price:params[:price],
+          description:params[:description]
         })
       end
 

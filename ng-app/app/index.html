@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="ngRailsTemplateApp">
+  <body ng-app="App">
     <div class="header">
 
         <a class="navbar-brand" href="#/">
@@ -25,7 +25,8 @@
         <ul class="nav navbar-nav right float-right">
           <li><a href="#/">Home</a></li>
           <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#/">Contact</a></li>
+          <li><a ng-href="#/list">List</a></li>
+          <li><a ng-href="#/contact">Contact</a></li>
         </ul>
 
     </div>
@@ -71,7 +72,7 @@
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/list.js"></script>
         <script src="scripts/controllers/form.js"></script>
-        <script src="scripts/controllers/info.js"></script>
+        <script src="scripts/api/ListService.js"></script>
         <!-- endbuild -->
 </body>
 </html>

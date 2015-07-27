@@ -1,15 +1,7 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name ngRailsTemplateApp
- * @description
- * # ngRailsTemplateApp
- *
- * Main module of the application.
- */
 angular
-  .module('ngRailsTemplateApp', [
+  .module('App', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -31,9 +23,9 @@ angular
         templateUrl: 'views/list.html',
         controller: 'ListCtrl'
       })
-      .when('/info', {
-        templateUrl: 'views/info.html',
-        controller: 'InfoCtrl'
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl'
       })
       .otherwise({
         redirectTo: '/'
