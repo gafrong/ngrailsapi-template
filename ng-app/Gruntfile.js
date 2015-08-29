@@ -421,12 +421,12 @@ module.exports = function (grunt) {
     },
 
     // Test settings
-    // karma: {
-    //   unit: {
-    //     configFile: 'test/karma.conf.js',
-    //     singleRun: true
-    //   }
-    // }
+    karma: {
+      unit: {
+        configFile: 'test/karma.conf.js',
+        singleRun: true
+      }
+    }
   });
 
 
@@ -455,8 +455,8 @@ module.exports = function (grunt) {
     'wiredep',
     'concurrent:test',
     'autoprefixer',
-    'connect:test'
- 
+    'connect:test',
+    'karma'
   ]);
 
   grunt.registerTask('build', [

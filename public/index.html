@@ -1,4 +1,31 @@
-<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title></title> <meta name="description" content="star chef food delivery"> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/main.e5cfcdd1.css">  <body ng-app="App"> <div class="header"> <a class="navbar-brand" href="#/"> <img src="/images/logoshadow.e0a63782.png" alt="logo" class="logo"> </a> <ul class="nav navbar-nav right float-right"> <li><a href="#/">Home</a></li> <li><a ng-href="#/about">About</a></li> <li><a ng-href="#/list">List</a></li> <li><a ng-href="#/contact">Contact</a></li> </ul> </div> <div ng-view=""></div> <div class="footer"> <div class="container"> <p><span class="glyphicon glyphicon-heart"></span> All rights reserved 2015</p> </div> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title></title> <meta name="description" content="star chef food delivery"> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/main.c5b3e453.css">  <body ng-app="App"> <div class="header"> <nav class="navbar navbar-default"> <div class="container-fluid"> <!-- Brand and toggle get grouped for better mobile display --> <div class="navbar-header center"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="brand" href="#/"> <img src="http://i.imgur.com/YpxighP.png" alt="logo" class="logo"> </a> </div> <!-- Collect the nav links, forms, and other content for toggling --> <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <ul class="nav navbar-nav"> <li><a ng-href="#/about">About</a></li> <li><a ng-href="#/list">List</a></li> <li><a ng-href="#/contact">Contact</a></li> </ul> </div><!-- /.navbar-collapse --> </div><!-- /.container-fluid --> </nav> <!--       <nav class="app-navbar">
+        
+        <button class="hamburger visible-xs" data-toggle="collapse" data-target="#navbar-collapse-main">
+          <span class="glyphicon glyphicon-menu-hamburger white margin-top-xs" aria-hidden="true" data-toggle="collapse" data-target="#navbar-collapse-main"></span>
+        </button>
+       
+          <div class="f collapse" id="navbar-collapse-main">
+            <ul class="nav navbar-nav right">
+              <li><a href="#/">Home</a></li>
+              <li><a ng-href="#/about">About</a></li>
+              <li><a ng-href="#/list">List</a></li>
+              <li><a ng-href="#/contact">Contact</a></li>
+            </ul>
+            <form role="search">
+                <input type="text" class="form-control" data-action="grow" placeholder="Search">
+            </form>     
+          </div>
+
+      </nav> --> <!-- <a class="navbar-brand" href="#/">
+          <img src="http://i.imgur.com/YpxighP.png" alt="logo" class="logo">
+        </a>
+      
+        <ul class="nav navbar-nav right float-right hidden-xs">
+          <li><a href="#/">Home</a></li>
+          <li><a ng-href="#/about">About</a></li>
+          <li><a ng-href="#/list">List</a></li>
+          <li><a ng-href="#/contact">Contact</a></li>
+        </ul> --> </div> <div ng-view=""></div> <div class="footer"> <div class="container"> <p><span class="glyphicon glyphicon-heart"></span> All rights reserved 2015</p> </div> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
        }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
