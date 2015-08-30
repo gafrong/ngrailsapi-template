@@ -13,6 +13,8 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/variables.css">
     <!-- endbuild -->
   </head>
   <body ng-app="App">
@@ -29,9 +31,9 @@
             <a class="brand" href="#/">
               <img src="/images/delb.png" alt="logo" class="logo">
             </a>
-            <a href="" class="login" data-toggle="modal" data-target="#loginModal" ng-if="!loggedIn">
-              <span class="glyphicon glyphicon-off icon visible-xs" style="font-size: 18px" >
-            </span></a>
+            <button href="" class="login visible-xs" data-toggle="modal" data-target="#loginModal" ng-if="!loggedIn">
+              <span class="glyphicon glyphicon-off icon" style="font-size: 18px" >
+            </span></button>
           </div>
           <!-- Login Modal -->
           <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

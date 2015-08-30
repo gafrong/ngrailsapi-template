@@ -1,14 +1,8 @@
-$white : #fff;
-$grey  : #f8f8f8;
-$grey-md: #777;
-$black : #000;
-$orange: #FF6633;
-$grey-dark : #111;
-$grey-dark2: #222;
+@import "variables.scss";
 
 
 body {
-  background-color: #f4f2f2;
+  background-color: $main-bg-color;
 }
 .center {
   text-align: center;
@@ -130,6 +124,19 @@ body {
 // Mobile Screen
 @media (max-width: 767px) {
   .header{
+    .navbar-header {
+      button.login, button.login:hover, button.login:focus {
+        background-color: $grey-dark;
+        color: $orange;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        .icon:hover, .icon:focus {
+          transition-duration: 0.5s;
+          color: $orange;
+        }
+      }
+    }
     .navbar-nav{
       display: block;
       padding: 0 15px;
@@ -149,6 +156,7 @@ body {
       float: right;
       .icon {
         padding: 15px 25px;
+        transition-duration: 0.5s;
         color: $white;
       }
     }
