@@ -12,4 +12,8 @@ angular.module('App')
     $scope.$on('auth:login-error', function(ev, reason) {
       $scope.error = reason.errors[0];
     });
+
+    // $scope.close = function(){
+    //   $modalInstance.close();
+    // }
   }]);
